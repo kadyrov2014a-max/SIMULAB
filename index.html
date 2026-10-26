@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Интерактивный мини-урок по основам компьютерного моделирования: теория, физический симулятор и тест. Автор — Амангельдиева Амина.">
+  <title>Симулятор — основы компьютерного моделирования</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="На главную">
+      <span class="brand-icon">S</span>
+      <span>СИМУЛЯТОР<span class="brand-dot">.</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#theory">Теория</a>
+      <a href="#lab">Лаборатория</a>
+      <a href="#applications">Применение</a>
+      <a href="#quiz">Тест</a>
+    </nav>
+    <a href="#lesson" class="header-button">Начать урок ↗</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="status-dot"></span> ИНТЕРАКТИВНЫЙ МИНИ-УРОК</div>
+        <h1>Изучай.<br>Экспериментируй.<br><span class="gradient-text">Понимай.</span></h1>
+        <p class="hero-description">
+          Узнай, как компьютер помогает исследовать реальный мир.
+          Изучи теорию, проведи виртуальный эксперимент и проверь свои знания.
+        </p>
+        <div class="hero-actions">
+          <a href="#lesson" class="button button-primary">Начать обучение <span>→</span></a>
+          <a href="#lab" class="button button-secondary">Открыть симулятор</a>
+        </div>
+        <div class="hero-meta">
+          <span>◷ 10 минут</span>
+          <span>✦ Для начинающих</span>
+          <span>⌘ Бесплатно</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Иллюстрация научного моделирования">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+        <div class="hero-core">
+          <span class="core-symbol">∑</span>
+          <span>SCIENCE ENGINE</span>
+        </div>
+        <div class="floating-card card-top">
+          <span class="mini-icon">↗</span>
+          <div><small>МОДЕЛЬ</small><strong>Запущена</strong></div>
+        </div>
+        <div class="floating-card card-bottom">
+          <span class="mini-icon">⌁</span>
+          <div><small>ЭКСПЕРИМЕНТ</small><strong>Всё под контролем</strong></div>
+        </div>
+        <div class="hero-cross cross-one">+</div>
+        <div class="hero-cross cross-two">+</div>
+      </div>
+    </section>
+
+    <section class="section learning-path" id="lesson">
+      <div class="section-heading">
+        <span class="eyebrow">ТВОЙ МАРШРУТ</span>
+        <h2>Один урок. <span class="gradient-text">Пять шагов.</span></h2>
+        <p>Проходи урок последовательно и закрепляй знания на практике.</p>
+      </div>
+      <div class="progress-panel">
+        <div class="progress-label">
+          <span>Прогресс обучения</span>
+          <strong id="progressText">0 из 5 этапов</strong>
+        </div>
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      </div>
+      <div class="steps-grid">
+        <a href="#theory" class="step-card">
+          <span class="step-number">01</span><span class="step-icon">▤</span>
+          <h3>Изучи теорию</h3><p>Основные понятия простыми словами.</p>
+          <span class="step-link">Перейти →</span>
+        </a>
+        <a href="#lab" class="step-card">
+          <span class="step-number">02</span><span class="step-icon">⌁</span>
+          <h3>Проведи опыт</h3><p>Управляй параметрами движения мяча.</p>
+          <span class="step-link">Перейти →</span>
+        </a>
+        <a href="#explain" class="step-card">
+          <span class="step-number">03</span><span class="step-icon">✳</span>
+          <h3>Разберись</h3><p>Узнай, как работает модель.</p>
+          <span class="step-link">Перейти →</span>
+        </a>
+        <a href="#quiz" class="step-card">
+          <span class="step-number">04</span><span class="step-icon">☷</span>
+          <h3>Ответь на вопросы</h3><p>Проверь понимание материала.</p>
+          <span class="step-link">Перейти →</span>
+        </a>
+        <a href="#result" class="step-card">
+          <span class="step-number">05</span><span class="step-icon">✧</span>
+          <h3>Подведи итог</h3><p>Узнай свой результат.</p>
+          <span class="step-link">Перейти →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section theory-section" id="theory">
+      <div class="section-heading">
+        <span class="eyebrow">01 / ТЕОРИЯ</span>
+        <h2>Что такое компьютерное моделирование?</h2>
+        <p>Разберём самое важное за несколько минут.</p>
+      </div>
+
+      <div class="definition-card">
+        <div class="definition-mark">“</div>
+        <div>
+          <h3>Главное определение</h3>
+          <p>Компьютерное моделирование — это создание и исследование компьютерной модели объекта, процесса или явления для изучения его свойств и возможных результатов.</p>
+        </div>
+      </div>
+
+      <div class="theory-grid">
+        <article class="info-card">
+          <span class="info-icon">◎</span><h3>Что такое модель?</h3>
+          <p>Упрощённое представление реального объекта или процесса. Например, виртуальная модель автомобиля.</p>
+        </article>
+        <article class="info-card">
+          <span class="info-icon">⌖</span><h3>Для чего она нужна?</h3>
+          <p>Чтобы изучать явления, проверять гипотезы, сравнивать результаты и прогнозировать события.</p>
+        </article>
+        <article class="info-card">
+          <span class="info-icon">◇</span><h3>Какие бывают модели?</h3>
+          <p>Математические, графические, информационные и имитационные модели.</p>
+        </article>
+      </div>
+
+      <div class="stages">
+        <h3>Этапы компьютерного моделирования</h3>
+        <div class="stage-list">
+          <div class="stage"><span>1</span><div><strong>Поставить задачу</strong><p>Определить, что нужно изучить.</p></div></div>
+          <div class="stage"><span>2</span><div><strong>Создать модель</strong><p>Выбрать важные свойства и параметры.</p></div></div>
+          <div class="stage"><span>3</span><div><strong>Провести эксперимент</strong><p>Изменить параметры и получить результаты.</p></div></div>
+          <div class="stage"><span>4</span><div><strong>Проанализировать</strong><p>Сравнить результаты и сделать вывод.</p></div></div>
+        </div>
+        <button class="button button-primary complete-button" data-complete="theory">Я изучил(а) теорию ✓</button>
+      </div>
+    </section>
+
+    <section class="section lab-section" id="lab">
+      <div class="section-heading">
+        <span class="eyebrow">02 / ВИРТУАЛЬНАЯ ЛАБОРАТОРИЯ</span>
+        <h2>Запусти свой <span class="gradient-text">эксперимент.</span></h2>
+        <p>Что произойдёт, если изменить скорость или угол броска мяча?</p>
+      </div>
+
+      <div class="lab-layout">
+        <div class="simulation-panel">
+          <div class="panel-top">
+            <div><span class="live-dot"></span> ФИЗИЧЕСКАЯ МОДЕЛЬ</div>
+            <span class="model-badge" id="modelStatus">ГОТОВА</span>
+          </div>
+          <canvas id="simulationCanvas" aria-label="Анимация полёта мяча" role="img"></canvas>
+          <div class="canvas-legend">
+            <span><i class="legend-line"></i> Траектория</span>
+            <span><i class="legend-ball"></i> Мяч</span>
+          </div>
+          <div class="simulation-actions">
+            <button class="button button-primary" id="launchButton">▶ Запустить опыт</button>
+            <button class="button button-secondary" id="resetButton">↺ Сбросить</button>
+          </div>
+          <p class="simulation-hint" id="simulationHint" aria-live="polite">Измени параметры и запусти эксперимент.</p>
+        </div>
+
+        <div class="controls-panel">
+          <div class="controls-heading">
+            <div><span class="eyebrow">УПРАВЛЕНИЕ</span><h3>Параметры опыта</h3></div>
+            <span class="settings-icon">⚙</span>
+          </div>
+          <div class="control-group">
+            <div class="control-label"><label for="speedInput">Начальная скорость</label><strong id="speedValue">20 м/с</strong></div>
+            <input id="speedInput" type="range" min="5" max="30" value="20" step="1">
+            <div class="range-labels"><span>5 м/с</span><span>30 м/с</span></div>
+          </div>
+          <div class="control-group">
+            <div class="control-label"><label for="angleInput">Угол броска</label><strong id="angleValue">45°</strong></div>
+            <input id="angleInput" type="range" min="10" max="80" value="45" step="5">
+            <div class="range-labels"><span>10°</span><span>80°</span></div>
+          </div>
+          <div class="control-group">
+            <div class="control-label"><label for="gravityInput">Ускорение свободного падения</label><strong id="gravityValue">9,81 м/с²</strong></div>
+            <input id="gravityInput" type="range" min="1" max="20" value="9.81" step="0.01">
+            <div class="range-labels"><span>1 м/с²</span><span>20 м/с²</span></div>
+          </div>
+          <div class="results-grid">
+            <div class="result-box"><span>Дальность</span><strong id="rangeResult">40,8 м</strong></div>
+            <div class="result-box"><span>Макс. высота</span><strong id="heightResult">10,2 м</strong></div>
+            <div class="result-box"><span>Время полёта</span><strong id="timeResult">2,9 с</strong></div>
+            <div class="result-box"><span>Время до вершины</span><strong id="peakTimeResult">1,4 с</strong></div>
+          </div>
+          <div class="model-note"><strong>Важно:</strong> это идеализированная модель. Сопротивление воздуха не учитывается, а мяч приземляется на той же высоте, с которой был запущен.</div>
+        </div>
+      </div>
+      <button class="button button-secondary complete-button" data-complete="lab">Я провёл(а) эксперимент ✓</button>
+    </section>
+
+    <section class="section explain-section" id="explain">
+      <div class="section-heading">
+        <span class="eyebrow">03 / АНАЛИЗ</span>
+        <h2>Что показал эксперимент?</h2>
+        <p>Посмотри, как математика помогает объяснить движение.</p>
+      </div>
+      <div class="explain-grid">
+        <article class="explain-card"><span class="explain-number">01</span><h3>Скорость</h3><p>При увеличении начальной скорости мяч в идеальной модели летит дальше и поднимается выше, если угол и ускорение свободного падения остаются прежними.</p></article>
+        <article class="explain-card"><span class="explain-number">02</span><h3>Угол броска</h3><p>Угол влияет на форму траектории. При одинаковой скорости и без сопротивления воздуха угол 45° даёт наибольшую дальность на горизонтальной поверхности.</p></article>
+        <article class="explain-card"><span class="explain-number">03</span><h3>Сила тяжести</h3><p>Чем больше ускорение свободного падения, тем быстрее мяч возвращается на землю и тем меньше его дальность при одинаковых скорости и угле.</p></article>
+      </div>
+      <div class="formula-card">
+        <div><span class="eyebrow">МАТЕМАТИЧЕСКАЯ МОДЕЛЬ</span><h3>Как рассчитывается движение?</h3><p>Для расчёта используются начальная скорость, угол броска и ускорение свободного падения.</p></div>
+        <div class="formula-list">
+          <div><span>Время полёта</span><code>t = 2v·sin(θ) / g</code></div>
+          <div><span>Дальность</span><code>R = v²·sin(2θ) / g</code></div>
+          <div><span>Максимальная высота</span><code>H = v²·sin²(θ) / (2g)</code></div>
+        </div>
+      </div>
+      <div class="experiment-conclusion"><span>✦</span><p id="conclusionText">Измени параметры в лаборатории, чтобы увидеть, как они влияют на движение мяча.</p></div>
+      <button class="button button-primary complete-button" data-complete="explain">Я понял(а) результат ✓</button>
+    </section>
+
+    <section class="section applications-section" id="applications">
+      <div class="section-heading">
+        <span class="eyebrow">ГДЕ ПРИМЕНЯЕТСЯ?</span>
+        <h2>Моделирование вокруг нас.</h2>
+        <p>Компьютерные модели помогают специалистам решать реальные задачи.</p>
+      </div>
+      <div class="applications-grid">
+        <article class="application-card"><span>🌦️</span><h3>Метеорология</h3><p>Прогнозирование погоды и изучение движения воздушных масс.</p></article>
+        <article class="application-card"><span>🏗️</span><h3>Архитектура</h3><p>Создание виртуальных зданий и анализ их конструкции.</p></article>
+        <article class="application-card"><span>🩺</span><h3>Медицина</h3><p>Изучение работы органов и моделирование биологических процессов.</p></article>
+        <article class="application-card"><span>🚀</span><h3>Космос</h3><p>Расчёт орбит, траекторий и параметров космических аппаратов.</p></article>
+        <article class="application-card"><span>🌱</span><h3>Экология</h3><p>Изучение изменения климата, водных ресурсов и экосистем.</p></article>
+        <article class="application-card"><span>🚗</span><h3>Инженерия</h3><p>Проверка конструкции и безопасности машин до изготовления.</p></article>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="section-heading">
+        <span class="eyebrow">04 / ПРОВЕРКА ЗНАНИЙ</span>
+        <h2>Проверь себя.</h2>
+        <p>Ответь на пять вопросов по материалу урока.</p>
+      </div>
+      <div class="quiz-panel" id="quizPanel">
+        <div class="quiz-top"><span id="questionCounter">ВОПРОС 1 ИЗ 5</span><span id="questionPoints">0 правильных</span></div>
+        <div class="quiz-progress"><div id="quizProgressFill"></div></div>
+        <h3 id="questionText">Что такое компьютерное моделирование?</h3>
+        <div class="answer-list" id="answerList"></div>
+        <div id="answerFeedback" class="answer-feedback" aria-live="polite" hidden></div>
+        <div class="quiz-actions">
+          <span id="answerCounter">Выбери один ответ</span>
+          <button class="button button-primary" id="nextQuestion" disabled>Ответить →</button>
+        </div>
+      </div>
+      <button class="button button-secondary complete-button" data-complete="quiz">Отметить тест как пройденный ✓</button>
+    </section>
+
+    <section class="section result-section" id="result">
+      <div class="result-card">
+        <div class="result-symbol">✧</div>
+        <span class="eyebrow">05 / ИТОГ УРОКА</span>
+        <h2 id="resultTitle">Ты готов(а) подвести итоги?</h2>
+        <p id="resultDescription">Заверши мини-урок и узнай, сколько вопросов ты решил(а) правильно.</p>
+        <div class="final-score"><strong id="finalScore">—</strong><span>правильных ответов из 5</span></div>
+        <div class="final-progress"><div id="finalProgressFill"></div></div>
+        <p class="final-note" id="finalNote">Результат появится после завершения теста.</p>
+        <div class="result-actions">
+          <button class="button button-primary" id="finishLesson">Завершить урок</button>
+          <button class="button button-secondary" id="restartButton">Пройти заново ↺</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section author-section" id="author">
+      <div class="author-mark">A</div>
+      <div><span class="eyebrow">ОБ АВТОРЕ</span><h2>Амангельдиева Амина</h2><p>Автор образовательного проекта об основах компьютерного моделирования. Проект создан, чтобы объяснять научные идеи простым языком и показывать, как математика и программирование помогают исследовать окружающий мир.</p></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#home"><span class="brand-icon">S</span><span>СИМУЛЯТОР<span class="brand-dot">.</span></span></a>
+    <p>Учись понимать мир через модели.</p>
+    <span>© <span id="currentYear"></span> Амангельдиева Амина</span>
+  </footer>
+</body>
+</html>
